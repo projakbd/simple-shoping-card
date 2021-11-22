@@ -1,0 +1,301 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  height: 100vh;
+  font-size: 16px;
+}
+
+.card-container {
+  position: absolute;
+  top: 10vh;
+  right: 0;
+  padding: 0 10px;
+  z-index: 9999;
+}
+
+.card-container .card-content {
+  width: 500px;
+  padding: 10px;
+  height: auto;
+  background-color: #fff;
+  border: 1px solid #000;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 99;
+}
+
+header .header-bg {
+  background-color: #ffffff;
+  -webkit-box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.15);
+          box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.15);
+  position: relative;
+}
+
+header .header-bg .h-container {
+  max-width: 1200px;
+  height: 10vh;
+  padding: 10px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+}
+
+header .header-bg .h-container a {
+  text-decoration: none;
+  position: relative;
+  -webkit-transition: color 0.2s ease;
+  transition: color 0.2s ease;
+  padding: 10px;
+}
+
+header .header-bg .h-container a .iconify {
+  font-size: 1.75rem;
+  color: #000;
+  -webkit-transition: color 0.2s ease;
+  transition: color 0.2s ease;
+}
+
+header .header-bg .h-container a .count {
+  position: absolute;
+  top: 2px;
+  font-size: .75rem;
+  color: #000;
+}
+
+header .header-bg .h-container .card:hover * {
+  color: #126FB7;
+}
+
+main {
+  margin-top: 10vh;
+  width: 100%;
+}
+
+main .content-bg {
+  background-color: #126FB7;
+}
+
+main .content-bg .c-container {
+  max-width: 1200px;
+  padding: 10px;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+}
+
+main .content-bg .c-container h1 {
+  color: #fff;
+  font-weight: 400;
+  padding: 10px;
+}
+
+main .content-bg .c-container ul {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main .content-bg .c-container ul li {
+  padding: 20px 10px;
+  overflow: hidden;
+  border-radius: 10px;
+  position: relative;
+  cursor: pointer;
+}
+
+main .content-bg .c-container ul li img {
+  display: block;
+  max-width: 350px;
+  max-height: 450px;
+  border-radius: 10px;
+}
+
+main .content-bg .c-container ul li .price {
+  position: absolute;
+  width: 350px;
+  height: 55px;
+  bottom: 20px;
+  background-color: #126fb7;
+  color: #fff;
+  font-size: 20px;
+  text-align: center;
+  text-justify: center;
+  line-height: 300%;
+  display: block;
+  opacity: 1;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+main .content-bg .c-container ul li .addToCard {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  background-color: #126fb7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  opacity: 0;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+main .content-bg .c-container ul li .addToCard .cardContent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+}
+
+main .content-bg .c-container ul li .addToCard .cardContent h3 {
+  padding: 5px;
+  font-size: 35px;
+}
+
+main .content-bg .c-container ul li .addToCard .cardContent div {
+  font-size: 20px;
+  padding: 5px;
+}
+
+main .content-bg .c-container ul li .addToCard .cardContent .cardBtn {
+  padding: 5px;
+  width: 115px;
+  height: 35px;
+  margin-top: 5px;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: bold;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+main .content-bg .c-container ul li .addToCard .cardContent .cardBtn:hover {
+  background-color: #018bfb9b;
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+main .content-bg .c-container ul li:hover .price {
+  opacity: 0;
+}
+
+main .content-bg .c-container ul li:hover .addToCard {
+  opacity: 1;
+}
+
+main .content-bg .c-container .pagination {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 20px 0;
+}
+
+main .content-bg .c-container .pagination a {
+  background-color: #fff;
+  padding: 10px 15px;
+  text-decoration: none;
+  color: #000;
+  font-size: 20px;
+  border: 1px solid #fff;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+main .content-bg .c-container .pagination a:hover {
+  background-color: #126FB7;
+  color: #fff;
+}
+
+main .content-bg .c-container .pagination .active {
+  background-color: #126FB7;
+  color: #fff;
+}
+
+main .content-bg .c-container .pagination .btn-one {
+  padding: 10px;
+  border: 1px solid #fff;
+  font-size: 20px;
+  background-color: #fff;
+  cursor: pointer;
+  border-radius: 10px 0 0 10px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+main .content-bg .c-container .pagination .btn-two {
+  padding: 10px;
+  border: 1px solid #fff;
+  font-size: 20px;
+  background-color: #fff;
+  cursor: pointer;
+  border-radius: 0 10px 10px 0;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+main .content-bg .c-container .pagination button:hover {
+  background-color: #126FB7;
+  color: white;
+}
+
+footer .footer-bg {
+  background-color: #ffffff;
+}
+
+footer .footer-bg .f-content {
+  display: block;
+  text-align: center;
+  padding: .75em;
+}

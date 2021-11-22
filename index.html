@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shoping Cart</title>
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-bg">
+            <div class="h-container">
+                <a href="#">
+                    <img class="logo" src="img/Logo.png" alt="img">
+                </a>
+                <a class="cartIcon" href="#">
+                    <span class="iconify" data-icon="ant-design:shopping-cart-outlined" data-inline="false"></span>
+                    <span class="count">0</span>
+                </a>
+                <div class="cart-container">
+                    <div class="cart-content">
+                        <h4>Cart Item: </h4>
+                        <div class="productList">
+                            <Table class="cartRow">
+                                <!-- <tr width="100%" class="cartItem">
+                                    <td><img class="cartImg" src="img/sunglass.jpg" alt="img"></td>
+                                    <td>
+                                        <h5 class="cartTitle"><span>Sunglass sfsfsf</span>
+                                        </h5>
+                                    </td>
+                                    <td>
+                                        <h5 class="cartPrice">790 BDT</h5>
+                                    </td>
+                                    <td><input class="cartQuantity" type="number" value="1"></td>
+                                    <td><button class="cartItemDelete">DELETE</button></td>
+                                </tr> -->
+                            </Table>
+
+                            <h5 class="total">Total = <span id="total">0</span> BDT</h5>
+                            <div class="cardFooter"> <button class="clearAll" onclick="clearAll()">Clear All</button>
+                                <button class="checkOut">Check Out</button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </header>
+    <main>
+        <div class="content-bg">
+            <div class="c-container">
+                <h1 class="c-title">Product List:</h1>
+                <ul>
+                    <li>
+                        <img class="imgSrc" src="img/sunglass.jpg" alt="">
+                        <div class="price"><del>890 BDT</del> <span> | </span><span class="soldPrice">790
+                            </span><span>BDT</span>
+                        </div>
+                        <div class="addToCart">
+                            <div class="cartContent">
+                                <h3 class="title">Sunglass black</h3>
+                                <div class="pr"> <del>890 BDT</del> <span> | </span><span>790 </span><span>BDT</span>
+                                </div>
+                                <button class="cartBtn">Add to Cart</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <img class="imgSrc" src="img/headphone2.jpg" alt="">
+                        <div class="price"><del>2100 BDT</del> <span> | </span><span class="soldPrice">2000
+                            </span><span>BDT</span>
+                        </div>
+                        <div class="addToCart">
+                            <div class="cartContent">
+                                <h3 class="title">Headphone black</h3>
+                                <div class="pr"><del>2100 BDT</del> <span> | </span><span>2000 </span><span>BDT</span>
+                                </div>
+                                <button class="cartBtn">Add to Cart</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <img class="imgSrc" src="img/watch.jpg" alt="">
+                        <div class="price"><del>22000 BDTT</del> <span> | </span><span class="soldPrice">19990
+                            </span><span>BDT</span></div>
+                        <div class="addToCart">
+                            <div class="cartContent">
+                                <h3 class="title">Apple watch</h3>
+                                <div class="pr"><del>22000 BDT</del> <span> | </span><span>19990 </span><span>BDT</span>
+                                </div>
+                                <button class="cartBtn">Add to Cart</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <img class="imgSrc" src="img/speaker1.jpg" alt="">
+                        <div class="price"><del>5000 BDT</del> <span> | </span><span class="soldPrice">3990
+                            </span><span>BDT</span>
+                        </div>
+                        <div class="addToCart">
+                            <div class="cartContent">
+                                <h3 class="title">Speaker1</h3>
+                                <div class="pr"><del>5000 BDT</del> <span> | </span><span>3990 </span><span>BDT</span>
+                                </div>
+                                <button class="cartBtn">Add to Cart</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <img class="imgSrc" src="img/watch1.jpg" alt="">
+                        <div class="price"><del>2500 BDT</del> <span> | </span><span class="soldPrice">2390
+                            </span><span>BDT</span>
+                        </div>
+                        <div class="addToCart">
+                            <div class="cartContent">
+                                <h3 class="title">Watch white</h3>
+                                <div class="pr"><del>2500 BDT</del> <span> | </span><span>2390 </span><span>BDT</span>
+                                </div>
+                                <button class="cartBtn">Add to Cart</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <img class="imgSrc" src="img/speaker2.jpg" alt="">
+                        <div class="price"><del>3500 BDT</del> <span> | </span><span class="soldPrice">3100
+                            </span><span>BDT</span>
+                        </div>
+                        <div class="addToCart">
+                            <div class="cartContent">
+                                <h3 class="title">speaker2</h3>
+                                <div class="pr"><del>3500 BDT</del> <span> | </span><span>3100 </span><span>BDT</span>
+                                </div>
+                                <button class="cartBtn">Add to Cart</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <img class="imgSrc" src="img/headphone3.jpg" alt="">
+                        <div class="price"><del>7000 BDT</del> <span> | </span><span class="soldPrice">5990
+                            </span><span>BDT</span>
+                        </div>
+                        <div class="addToCart">
+                            <div class="cartContent">
+                                <h3 class="title">Headphone2</h3>
+                                <div class="pr"><del>7000 BDT</del> <span> | </span><span>5990 </span><span>BDT</span>
+                                </div>
+                                <button class="cartBtn">Add to Cart</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <img class="imgSrc" src="img/headphone.jpg" alt="">
+                        <div class="price"><del>11000 BDT</del> <span> | </span><span class="soldPrice">10000
+                            </span><span>BDT</span>
+                        </div>
+                        <div class="addToCart">
+                            <div class="cartContent">
+                                <h3 class="title">headphone3</h3>
+                                <div class="pr"><del>11000 BDT</del> <span> | </span><span>10000 </span><span>BDT</span>
+                                </div>
+                                <button class="cartBtn">Add to Cart</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <img class="imgSrc" src="img/control.jpg" alt="">
+                        <div class="price"><del>2200 BDT</del> <span> | </span><span class="soldPrice">2090
+                            </span><span>BDT</span>
+                        </div>
+                        <div class="addToCart">
+                            <div class="cartContent">
+                                <h3 class="title">Controller</h3>
+                                <div class="pr"><del>2200 BDT</del> <span> | </span><span>2090 </span><span>BDT</span>
+                                </div>
+                                <button class="cartBtn">Add to Cart</button>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <!-- <div class="pagination">
+                    <button class="btn-one"><i class="fas fa-arrow-left"></i></button>
+                    <a class="active" href="#">1</a>
+                    <a href="#">2</a>
+                    <a href="#">3</a>
+                    <button class="btn-two"><i class="fas fa-arrow-right"></i></button>
+
+                </div> -->
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-bg">
+            <div class="f-content">
+                <h4>Copyright &copy 2021 Md. Jakir Hosen. All rights reserved.</h4>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
